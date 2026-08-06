@@ -1,0 +1,132 @@
+<html>
+        <head><title>Downloaded HTML</title></head>
+        <body>
+            <pre style="white-space: pre-wrap; word-wrap: break-word;"><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff6ec4, #7873f5);
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.15);
+      padding: 40px;
+      border-radius: 25px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+      backdrop-filter: blur(10px);
+      animation: pop 1s ease;
+      max-width: 420px;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      margin-bottom: 10px;
+      animation: glow 2s infinite alternate;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+      line-height: 1.5;
+    }
+
+    button {
+      background: white;
+      color: #ff4fa3;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    button:hover {
+      background: #ffe6f3;
+      transform: scale(1.08);
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #fff; }
+      to { text-shadow: 0 0 25px #fff, 0 0 40px #ff99cc; }
+    }
+
+    @keyframes pop {
+      from { transform: scale(0.7); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .balloon {
+      position: absolute;
+      bottom: -120px;
+      width: 50px;
+      height: 70px;
+      background: #ff4fa3;
+      border-radius: 50%;
+      animation: float 8s linear infinite;
+    }
+
+    .balloon::after {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 50px;
+      background: white;
+      left: 50%;
+      top: 70px;
+    }
+
+    .balloon:nth-child(1){ left:10%; animation-duration:7s; background:#ff4fa3; }
+    .balloon:nth-child(2){ left:30%; animation-duration:9s; background:#ffd93d; }
+    .balloon:nth-child(3){ left:50%; animation-duration:8s; background:#6bcB77; }
+    .balloon:nth-child(4){ left:70%; animation-duration:10s; background:#4d96ff; }
+    .balloon:nth-child(5){ left:90%; animation-duration:7.5s; background:#ff8fab; }
+
+    @keyframes float {
+      from { transform: translateY(0); }
+      to { transform: translateY(-120vh); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+
+  <div class="card">
+    <h1>🎉 Happy Birthday! 🎂</h1>
+    <p>
+      Wishing you a day filled with happiness, laughter, and love.  
+      May all your dreams come true and your life shine brighter every year! ✨
+    </p>
+    <button onclick="showMessage()">Click for Surprise 🎁</button>
+  </div>
+
+  <script>
+    function showMessage() {
+      alert("🎂 Many many happy returns of the day! Stay blessed and keep smiling always 😊🎉");
+    }
+  </script>
+
+</body>
+</html>
+</pre>
+        </body>
+    </html>
